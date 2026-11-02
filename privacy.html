@@ -10,20 +10,43 @@
 </style>
 </head>
 <body>
-<h1>Privacy policy</h1>
+<h1>paulinus-rclone privacy policy</h1>
 <p>Last updated: 2026-11-02.</p>
-<p>paulinus-rclone is a personal backup tool used only by its owner. It uploads the owner's own files to the owner's own Google Drive and downloads them back.</p>
-<h2>What data it accesses</h2>
-<p>It requests only the <code>drive.file</code> scope, so it can see only the files it has created itself. It does not read any other file, email, contact or profile data in the Google account.</p>
-<h2>What it does with the data</h2>
-<p>The files stay on the owner's computer and in the owner's Google Drive. The tool does not send them, or any information about them, anywhere else. Nothing is collected, sold or shared with third parties, and nothing is used for advertising.</p>
-<p>The OAuth token is stored only on the owner's computer, in rclone's local configuration file.</p>
-<h2>Google API Services User Data Policy</h2>
-<p>The use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
-<h2>How to revoke access</h2>
-<p>Access can be revoked at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
-<h2>Contact</h2>
-<p><a href="https://github.com/radiokilcat">github.com/radiokilcat</a></p>
-<p><a href="index.html">Home</a></p>
+<p>This privacy policy describes how paulinus-rclone ("the app") accesses, uses, stores and shares Google user data. The app is a personal backup tool built on <a href="https://rclone.org/">rclone</a>. It is developed and used by one person, the owner of this site, to copy their own data files to their own Google Drive and to download them back. It is not offered to the public.</p>
+
+<h2>1. Google user data the app accesses</h2>
+<p>The app requests one OAuth scope: <code>https://www.googleapis.com/auth/drive.file</code>. With this scope the app can:</p>
+<ul>
+  <li>create files and folders in the user's Google Drive;</li>
+  <li>read, update and delete only the files and folders that the app itself created;</li>
+  <li>read the Drive storage quota (total, used and free space).</li>
+</ul>
+<p>The app cannot see any other file in Google Drive. It does not access Gmail, Contacts, Calendar, Photos, or the user's name, email address or profile.</p>
+
+<h2>2. How the app uses that data</h2>
+<p>The data is used only to provide the backup function the user asked for: to upload backup files, to list and download them, to delete old backups, and to check that there is enough free space. The data is not used for any other purpose. It is not used for advertising, it is not sold, and it is not used to train any machine learning or AI model.</p>
+
+<h2>3. Data collection</h2>
+<p>The app does not collect data. It has no server, no analytics, no telemetry and no cookies. All processing happens on the user's own computer, and the files go directly from that computer to Google Drive over an encrypted HTTPS connection.</p>
+
+<h2>4. Storage and security</h2>
+<p>The OAuth access token and refresh token are stored only on the user's own computer, in rclone's local configuration file. They are never sent anywhere except to Google's own servers to authorize requests. The backup files are stored in the user's own Google Drive, under the user's Google account and Google's own security controls.</p>
+
+<h2>5. Sharing</h2>
+<p>The app does not share, transfer or disclose Google user data to any third party. No person other than the user has access to it.</p>
+
+<h2>6. Retention and deletion</h2>
+<p>Backup files stay in the user's Google Drive until the user deletes them, either with the app or in Google Drive itself. The tokens stay on the user's computer until the user deletes the rclone configuration or revokes access. Access can be revoked at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. After revocation the app can no longer reach the user's Drive.</p>
+
+<h2>7. Google API Services User Data Policy</h2>
+<p>The app's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>8. Changes to this policy</h2>
+<p>If this policy changes, the new version will be published on this page with a new "Last updated" date.</p>
+
+<h2>9. Contact</h2>
+<p>Questions about this policy can be sent through <a href="https://github.com/radiokilcat">github.com/radiokilcat</a>.</p>
+
+<p><a href="index.html">paulinus-rclone home page</a></p>
 </body>
 </html>
